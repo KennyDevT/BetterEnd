@@ -31,7 +31,7 @@
     "fabric-datagen": [
       "org.betterx.datagen.betterend.BetterEndDatagen"
     ],
-    "rei_client_off": [
+    "rei_client": [
       "org.betterx.betterend.integration.rei.REIPlugin"
     ],
     "emi": [

@@ -4,18 +4,7 @@
     "translate": "enchantment.betterend.end_veil"
   },
   "effects": {
-    "minecraft:tick": [
-      {
-        "effect": {
-          "type": "minecraft:apply_mob_effect",
-          "min_duration": 1.0,
-          "max_duration": 1.5,
-          "min_amplifier": 1.0,
-          "max_amplifier": 1.0,
-          "to_apply": "betterend:end_veil"
-        }
-      }
-    ]
+    "betterend:end_veil": {}
   },
   "max_cost": {
     "base": 41,
@@ -23,12 +12,12 @@
   },
   "max_level": 1,
   "min_cost": {
-    "base": 1,
+    "base": 5,
     "per_level_above_first": 0
   },
   "slots": [
     "head"
   ],
   "supported_items": "#minecraft:enchantable/head_armor",
-  "weight": 2
+  "weight": 8
 }

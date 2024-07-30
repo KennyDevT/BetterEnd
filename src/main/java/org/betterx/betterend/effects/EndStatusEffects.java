@@ -10,6 +10,8 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 
+import org.jetbrains.annotations.ApiStatus;
+
 public class EndStatusEffects {
     public final static MobEffectInstance CRYSTALITE_HEALTH_REGEN = new MobEffectInstance(
             MobEffects.REGENERATION,
@@ -40,5 +42,10 @@ public class EndStatusEffects {
 
     public static <E extends MobEffect> Holder<MobEffect> registerEffect(String name, E effect) {
         return Registry.registerForHolder(BuiltInRegistries.MOB_EFFECT, BetterEnd.C.mk(name), effect);
+    }
+
+    @ApiStatus.Internal
+    public static void ensureStaticallyLoaded() {
+        // NO-OP
     }
 }
